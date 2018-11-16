@@ -1,0 +1,31 @@
+{
+  "name": "imdb-scrapper",
+  "version": "1.0.0",
+  "description": "application for displaying imdb listed movie  by taking its url",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishek4kahol/imdb-scrapper.git"
+  },
+  "author": "abhishek kahol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishek4kahol/imdb-scrapper/issues"
+  },
+  "homepage": "https://github.com/abhishek4kahol/imdb-scrapper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql2": "^1.6.4",
+    "nodemon": "^1.18.6",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "sequelize": "^4.41.2",
+    "sequelize-cli": "^5.3.0"
+  }
+}

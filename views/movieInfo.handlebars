@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand">A Movie Data fetcher Application</h1>
+      <div class="wrap">
+        <div class="search">
+          <form method="POST" action="getresult">
+            <input type="text" class="searchTerm" name="url" placeholder="enter url">
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div>
+      {{#if details.name}}
+        <div class="details">
+          <p><strong>Movie name: </strong> {{details.name}}</p>
+          <p><strong>Plot Summary: </strong> {{details.summary}}</p>
+          <p><strong>Director: </strong>  {{details.director}}</p>
+          <p><strong>Writer: </strong>  {{details.writer}}</p>
+          <p><strong>Stars: </strong> {{details.stars}}</p>
+          <p><strong>Rating: </strong> {{details.rating}} / 10</p>
+        </div>
+      {{/if}}
+      </div>
+    </div>
+  </body>
+</html>  
